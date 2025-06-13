@@ -1,0 +1,61 @@
+{
+  "name": "true-myth-zod",
+  "description": "Integration between True Myth (https://true-myth.js.org) and Zod (https://zod.dev)",
+  "version": "0.1.0",
+  "contributors": [
+    {
+      "name": "Chris Krycho",
+      "email": "hello@chriskrycho.com",
+      "url": "https://www.chriskrycho.com"
+    }
+  ],
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://github.com/sponsors/chriskrycho"
+    },
+    {
+      "type": "individual",
+      "url": "https://buymeacoffee.com/chriskrycho"
+    }
+  ],
+  "license": "BlueOak-1.0.0",
+  "repository": {
+    "url": "https://github.com/true-myth/true-myth-zod",
+    "type": "git+https://github.com/true-myth/true-myth-zod"
+  },
+  "bugs": {
+    "url": "https://github.com/true-myth/true-myth-zod/issues"
+  },
+  "keywords": [
+    "typescript",
+    "functional programming",
+    "maybe",
+    "result",
+    "task",
+    "true-myth",
+    "zod"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.5",
+    "expect-type": "^1.2.1",
+    "true-myth": "^9.0.1",
+    "typescript": "^5.8.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.3",
+    "zod": "^3.25.64"
+  },
+  "peerDependencies": {
+    "true-myth": "^9",
+    "zod": "^3.25"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2024",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": [
+      "es2024"
+    ],
+    "noUncheckedIndexedAccess": true,
+    "outDir": "dist",
+    "paths": {
+      // These correspond to the public API imports as defined in `"exports"` in
+      // `package.json`. (This way the tests can run -- and, critically, they
+      // are usable in the editor! -- without having to prebuild the `src`
+      // directory.)
+      "true-myth-zod": [
+        "./src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "test"
+  ]
+}
