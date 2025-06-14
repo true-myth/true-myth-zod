@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+    groups:
+      vitest-packages:
+        patterns:
+          - 'vitest'
+          - '@vitest/coverage-v8'
+        update-types:
+          - 'minor'
+          - 'patch'
