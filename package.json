@@ -57,5 +57,9 @@
   "peerDependencies": {
     "true-myth": "^9",
     "zod": "^3.25"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./dist",
   }
 }
