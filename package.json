@@ -64,5 +64,8 @@
     "clean": "rm -rf ./dist",
     "test": "vitest run --coverage --silent='passed-only'",
     "tdd": "vitest",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "pnpm test && pnpm build",
+    "postpublish": "pnpm clean"
   }
 }
