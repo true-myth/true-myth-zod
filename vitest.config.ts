@@ -12,7 +12,6 @@ export default defineConfig({
     coverage: {
       reporter: ['text'],
       include: ['src/**/*.ts'],
-      exclude: ['src/index.ts'],
       thresholds: {
         branches: 100,
         functions: 100,

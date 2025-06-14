@@ -18,6 +18,7 @@ export function asyncParserFor<S extends z.$ZodType>(
   return (data) => {
     return task
       .fromPromise(z.safeParseAsync(schema, data), (cause: unknown): never => {
+        /* v8 ignore next 3 */ // This should be impossible!
         throw new Error("Bug in Zod's safeParseAsync: it should never throw!", {
           cause,
         });
