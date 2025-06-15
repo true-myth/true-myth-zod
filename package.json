@@ -46,9 +46,11 @@
   },
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@release-it-plugins/lerna-changelog": "^7.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@vitest/coverage-v8": "3.2.3",
     "expect-type": "^1.2.1",
+    "release-it": "^17",
     "true-myth": "^9.0.1",
     "typescript": "^5.8.3",
     "vite-tsconfig-paths": "^5.1.4",
@@ -67,5 +69,26 @@
     "type-check": "tsc --noEmit",
     "prepublishOnly": "pnpm test && pnpm build",
     "postpublish": "pnpm clean"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it-plugins/lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    }
+  },
+  "changelog": {
+    "labels": {
+      "breaking": ":boom: Breaking Change",
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "documentation": ":memo: Documentation",
+      "internal": ":house: Internal",
+      "deprecation": ":wastebasket: Deprecation"
+    }
   }
 }
