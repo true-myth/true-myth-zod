@@ -46,7 +46,7 @@
   },
   "types": "./dist/index.d.ts",
   "devDependencies": {
-    "@release-it-plugins/lerna-changelog": "^7.0.0",
+    "@release-it-plugins/lerna-changelog": "^8.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@vitest/coverage-v8": "3.2.4",
     "expect-type": "^1.2.1",
