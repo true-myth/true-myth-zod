@@ -1,7 +1,7 @@
 {
   "name": "true-myth-zod",
   "description": "Integration between True Myth (https://true-myth.js.org) and Zod (https://zod.dev)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "contributors": [
     {
       "name": "Chris Krycho",
