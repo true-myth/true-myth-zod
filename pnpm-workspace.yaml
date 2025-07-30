@@ -1,2 +1,7 @@
 onlyBuiltDependencies:
   - esbuild
+
+# required if there is a pnpm-workspace.yaml, which is necessary for the sake of
+# pnpm's `onlyBuiltDependencies`.
+packages:
+  - .
