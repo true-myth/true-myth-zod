@@ -45,6 +45,11 @@
     "./package.json": "./package.json"
   },
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md"
+  ],
   "devDependencies": {
     "@release-it-plugins/lerna-changelog": "^8.0.1",
     "@tsconfig/strictest": "^2.0.5",
