@@ -60,7 +60,7 @@
     "typescript": "^5.8.3",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.3",
-    "zod": "^3.25.64"
+    "zod": "^4.4.3"
   },
   "peerDependencies": {
     "true-myth": "^9",
